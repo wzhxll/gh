@@ -1,4 +1,4 @@
--- 独立脚本：获取南瓜刀 (Jack-O-Sword)
+-- 独立脚本：只获取铁桩（原样提取）
 local Players = game:GetService("Players")
 local lp = Players.LocalPlayer
 
@@ -13,7 +13,6 @@ end
 
 local purchase = getPurchaseEvent()
 if purchase then
-    -- 南瓜刀在游戏中的内部真实名称
-    purchase:FireServer("Jack-O-Sword")
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title="获取", Text="已获取南瓜刀", Duration=2})
+    purchase:FireServer("Iron Stake")
+    game:GetService("StarterGui"):SetCore("SendNotification", {Title="获取", Text="已获取铁桩", Duration=2})
 end
